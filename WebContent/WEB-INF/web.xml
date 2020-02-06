@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>app</display-name>
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.app.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/Accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>com.app.servlets.DeleteUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUser</servlet-name>
+    <url-pattern>/DeleteUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AjouterQuestions</servlet-name>
+    <servlet-class>com.app.servlets.AjouterQuestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterQuestions</servlet-name>
+    <url-pattern>/AjouterQuestions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EspaceAdmin</servlet-name>
+    <servlet-class>com.app.servlets.EspaceAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EspaceAdmin</servlet-name>
+    <url-pattern>/EspaceAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AjoutQuestionnaire</servlet-name>
+    <servlet-class>com.app.servlets.AjoutQuestionnaire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjoutQuestionnaire</servlet-name>
+    <url-pattern>/AjoutQuestionnaire</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>VoirRecom</servlet-name>
+    <servlet-class>com.app.servlets.VoirRecom</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VoirRecom</servlet-name>
+    <url-pattern>/VoirRecom</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EditUser</servlet-name>
+    <servlet-class>com.app.servlets.EditUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditUser</servlet-name>
+    <url-pattern>/EditUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Recommander</servlet-name>
+    <servlet-class>com.app.servlets.Recommander</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Recommander</servlet-name>
+    <url-pattern>/Recommander</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Reponse</servlet-name>
+    <servlet-class>com.app.servlets.Reponse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reponse</servlet-name>
+    <url-pattern>/Reponse</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>AfficherReponses</servlet-name>
+    <servlet-class>com.app.servlets.AfficherReponses</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AfficherReponses</servlet-name>
+    <url-pattern>/AfficherReponses</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>com.app.servlets.Connexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>/Connexion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ChoixQuestionnaire</servlet-name>
+    <servlet-class>com.app.servlets.ChoixQuestionnaire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChoixQuestionnaire</servlet-name>
+    <url-pattern>/ChoixQuestionnaire</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+  <listener>
+    <listener-class>com.app.dao.InitialisationDaoFactory</listener-class>
+  </listener>
+</web-app>
